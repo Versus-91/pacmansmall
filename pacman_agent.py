@@ -297,7 +297,7 @@ class PacmanAgent:
             while True:
                 action = self.act(state, eval=True)
                 action_t = action.item()
-                for i in range(3):
+                for i in range(4):
                     if not done:
                         obs, reward, done, _ = self.game.step(action_t)
                     else:
